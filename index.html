@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sign-Up</title>
+</head>
+<body>
+    <div class="container">
+        <section>
+            <div class="brand-container">
+                <div class="banner">
+                    <img src="images/odin-lined.png" alt="Odin Outlined Logo"><h1>ODIN</h1>
+                </div>
+                <p id="image_attribution">Photo by Halie West on Unsplash</p>
+            </div>
+        </section>
+        <section>
+            <div class="form-container">
+                <div class="intro-text">
+                    <h2>This is not a real online service! You know you need something like this in your life to help you realize your
+                        deepest dreams.</h2>
+                    <h2>Sign up <em>now</em> to get started.</h2>
+                    <h2>You <em>know</em> you want to.</h2>
+                </div>
+                <form action="" method="post">
+                    <div class="form-box">
+                        <p>Let's do this!</p>
+                        <div class="field">
+                            <!-- first name label and form field -->
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" id="first-name" name="fName" required>
+                        </div>
+                        <div class="field">
+                            <!-- last name label and form field -->
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" id="last-name" name="lName" required>
+                        </div>
+                        <div class="field">
+                            <!-- email label and form field -->
+                            <label for="user-email">EMAIL</label>
+                            <input type="email" id="user-email" name="userEmail" required title="Please enter a valid Email address, ex. abc@def.com" autocomplete="email">
+                        </div>
+                        <div class="field">
+                            <!-- phone number label and form field -->
+                            <label for="user-phone-number">PHONE NUMBER</label>
+                            <input type="tel" id="user-phone-number" name="userPhoneNumber" title="10-digit US phone number, lke 555-123-4567" required autocomplete="tel" pattern="(\+1[\-.\s]?)?\(?\d{3}\)?[\-.\s]?\d{3}[\-.\s]?\d{4}">
+                        </div>
+                        <div class="field">
+                            <!-- password labels and form fields -->
+                            <label for="user-password">PASSWORD</label>
+                            <input type="password" id="user-password" name="userPassword" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[^A-Za-z0-9\s]).{8,}"
+                            title="At least 8 characters, including an uppercase letter, a lowercase letter, a number and a special character"
+                            autocomplete="new-password" required minlength="8">
+                        </div>
+                        <div class="field">
+                            <label for="confirm-password">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirm-password" name="confirmPassword" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[^A-Za-z0-9\s]).{8,}"
+                            title="At least 8 characters, including an uppercase letter, a lowercase letter, a number and a special character"
+                            autocomplete="new-password" required minlength="8">
+                        </div>   
+                    </div>
+                    <div class="button-container">
+                        <button type="submit">Create Account</button>
+                    </div>
+                </form>
+                <p>Already have an account? <a href="">Log in</a></p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

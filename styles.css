@@ -1,0 +1,160 @@
+@font-face {
+    font-family: 'Norse';
+    src: url('fonts/norse/Norse.woff2') format('woff2'),
+        url('fonts/norse/Norse.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Norse';
+    src: url('fonts/norse/Norse-Bold.woff2') format('woff2'),
+        url('fonts/norse/Norse-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.brand-container {
+    display: flex;
+    flex-direction: column;
+    background-image: url(images/sign_up_form_background.avif);
+    background-size: cover;
+    min-height: 100vh;
+}
+
+#image_attribution {
+    color: white;
+    margin-top: auto;
+    text-align: center;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25vh;
+    background-color: rgba(0, 0, 0, .5);
+    max-height: 240px;
+}
+
+.banner h1 {
+    font-family: Norse;
+    font-weight: bold;
+    color: white;
+    font-size: 120px;
+}
+
+.banner img {
+    width: 20%;
+    max-height: 240px;
+}
+
+
+section:nth-of-type(1) {
+    flex: 2;
+}
+
+section:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: 3;
+}
+
+.field, .button-container, .form-box p, .form-container p, .intro-text {
+    padding-left: 48px;
+}
+
+.intro-text {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    max-width: 776px;
+    padding: 0 48px 32px;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 33%
+}
+
+label {
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+input {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+}
+
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-container p {
+    font-size: 24px;
+}
+
+.form-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    padding-bottom: 32px;
+}
+
+.form-box p {
+    flex: 1 0 100%;
+}
+
+button {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #596D48;
+    border: none;
+    padding: 14px 54px;
+    border-radius: 8px;
+    height: 48px;
+    cursor: pointer;
+}
+
+.button-container {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+input:user-invalid {
+    border-color: red;
+}
+
+input:user-valid {
+    border-color: green;
+}
